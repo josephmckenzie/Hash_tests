@@ -22,4 +22,9 @@ end
 def test_for_3_cents
 assert_equal({penny:3,nickel:0,dime:0,quarter:0}, coin_change_counter(3))
 end  
+
+def test_for_16_cents
+assert_equal({quarter:0, dime:1, nickel:1, penny:1},coin_change_counter(10+5+1))
+end
+
 end
