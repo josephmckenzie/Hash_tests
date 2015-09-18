@@ -7,7 +7,8 @@ elsif coin == 5
 change={penny:0, nickle:5, dime:0, quarter:0}
 elsif coin == 10
 change= {penny:0,nickle:0,dime:10, quarter:0}
-
+elsif coin == 25
+change= {penny:0,nickle:0,dime:0, quarter:25}
+end
 end
 
-end
