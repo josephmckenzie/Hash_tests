@@ -4,22 +4,22 @@ require "minitest/autorun"
 class Coin_changer<Minitest::Test
 
 def test_for_penny
-assert_equal({penny:1, nickle:0, dime:0, quarter:0}, coin_change_counter(1))
+assert_equal({penny:1, nickel:0, dime:0, quarter:0}, coin_change_counter(1))
 end
 
 def test_for_nickle
-assert_equal({penny:0,nickle:5,dime:0, quarter:0}, coin_change_counter(5))
+assert_equal({penny:0,nickel:1,dime:0, quarter:0}, coin_change_counter(5))
 end
 
 def test_for_dime
-assert_equal({penny:0,nickle:0,dime:10, quarter:0}, coin_change_counter(10))
+assert_equal({penny:0,nickel:0,dime:1, quarter:0}, coin_change_counter(10))
 end
 
 def test_for_quarter
-assert_equal({penny:0,nickle:0,dime:0, quarter:25}, coin_change_counter(25))
+assert_equal({penny:0,nickel:0,dime:0, quarter:1}, coin_change_counter(25))
 end
   
 def test_for_3_cents
-assert_equal({penny:3,nickle:0,dime:0,quarter:0}, coin_change_counter(3))
+assert_equal({penny:3,nickel:0,dime:0,quarter:0}, coin_change_counter(3))
 end  
 end
