@@ -17,8 +17,9 @@ end
 
 def test_for_quarter
 assert_equal({penny:0,nickle:0,dime:0, quarter:25}, coin_change_counter(25))
-
 end
   
-
+def test_for_3_cents
+assert_equal({penny:3,nickle:0,dime:0,quarter:0}, coin_change_counter(3))
+end  
 end
