@@ -9,11 +9,14 @@ def coin_change_counter(amount)
 #Check the coin and coins value for each of the elements in the hash coin_choices 
  coin_choices.each do |coin, value|
     while
-    value<=amount
+    
+	#the amount of coins will be less than or equal to the value of the coins 
+	value<=amount
     start_values[coin]+=1
     amount=amount-value
 end
 end
+#our new hash with the values from each test that we put in 
 start_values
 end
 
