@@ -1,10 +1,10 @@
 def coin_change_counter(amount)
 # we start with a blank hash because we are going to be pushing the values from our other hashes in to a blank one to get a new one 
- start_values={penny:0, nickel:0, dime:0, quarter:0}
+ start_values={penny:0, nickel:0, dime:0, quarter:0, dollar:0}
 
  #These are all the coins and thier respecttive values (or what they are worth)
  #Why does this one have to be backwards? (Ie: quarter to penny rather than penny to quarter)
- coin_choices= {quarter:25, dime:10, nickel:5, penny:1}
+ coin_choices= {dollar:100,quarter:25, dime:10, nickel:5, penny:1}
 
 #Check the coin and coins value for each of the elements in the hash coin_choices 
  coin_choices.each do |coin, value|
